@@ -3,6 +3,7 @@
 import argparse
 import os
 import json
+from pprint import pprint
 
 from twitter import Api
 
@@ -40,6 +41,7 @@ def main():
         # api.GetStreamFilter will return a generator that yields one status
         # message (i.e., Tweet) at a time as a JSON dictionary.
         for line in api.GetStreamFilter(follow=USERS):
+            pprint(line)
             f.write(json.dumps(line))
             f.write('\n')
 
