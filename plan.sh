@@ -1,0 +1,10 @@
+pkg_name=tipser
+pkg_distname=$pkg_name
+pkg_origin=core
+pkg_version=0.0.1
+pkg_maintainer="Maxime Vaude maxime.vaude@gmail.com"
+pkg_license=('tipser')
+pkg_source=TODO
+pkg_shasum=TODO
+pkg_dirname=${pkg_distname}-${pkg_version}
+pkg_deps=(core/python)
